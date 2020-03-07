@@ -51,5 +51,6 @@ public class Person {
                         "\nAge: "+ this.age +
                         "\nOccupation: " + this.occupation + "\n" +
                         "_________" + "\n");
+
     }
 }
