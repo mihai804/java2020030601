@@ -3,6 +3,8 @@ package main;
 import TestingClasses01.*;
 import TestingClasses02.*;
 
+import javax.xml.namespace.QName;
+
 public class Main {
     public static void main(String[] args){
         System.out.println("Program started ! \n");
@@ -28,5 +30,20 @@ public class Main {
     private static void testingClasses02(){
         System.out.print("Tone: ");
         SingleTone tone1 = SingleTone.getTone();
+        System.out.println("\n\n");
+        Employee empOne = new Employee("James Smith");
+        Employee empTwo = new Employee("Mary Anne");
+
+        empOne.empAge(26);
+        empOne.empDesignation("Senior Software Developer");
+        empOne.empSalary(1000);
+        empOne.printEmployee();
+
+        empTwo.empAge(21);
+        empTwo.empDesignation("Software Developer");
+        empTwo.empSalary(500);
+        empTwo.printEmployee();
+
+
     }
 }
